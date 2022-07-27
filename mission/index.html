@@ -1,69 +1,155 @@
-<html>
-    <head>
-        <title>Mission 1</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body >
-            <div class="navbar">
-                <img src="img/logo.png" class="logo">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mission 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>  
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-lg-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle p-lg-3" href="#menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#menu">Corn pizza</a></li>
+                  <li><a class="dropdown-item" href="#menu">Barbecue pizza</a></li>
+                  <li><a class="dropdown-item" href="#menu">pizza</a></li>
+                  <li><a class="dropdown-item" href="#menu">Vegetable pizza</a></li>
+                  <li><a class="dropdown-item" href="#menu">salami pizza</a></li>
+                  <li><a class="dropdown-item" href="#menu">Mushroom pizza</a></li>
                 </ul>
-            </div>
-            <section id="home" class="home">
-                <div  class="content">
-                    <h1>Welcome To Italian Pizza</h1>
-                    <div>
-                        <button type="button"> <span>Order Now</span></button>
-                    </div>
-                </div>
-                <img src="img/pizza.png" class="photo">
-            </section>
-            
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3" href="#contact">Contact</a>
+              </li>
+          </div>
+        </div>
+    </nav>
 
+<div class="container text-dark">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div id="home" class="carousel-inner home">
+      <div class="carousel-item active">
+        <div class="content">
+          <h1><b>Welcome To Italian Pizza</b></h1>
+          <div>
+              <button type="button" class="text-dark btn btn-warning rounded-pill main-btn">Order Now</button>
+          </div>
+        <img src="img/pizza.png" class="photo slider-image">
+       
+      </div>
+      </div>
+      <div class="carousel-item">
 
-            <section id="menu" class="menu">
-                <div class="menu1">
-                    <img src="img/Corn pizza.jpg" >
-                    <h4>Corn pizza</h4>
-                </div>
-                <div class="menu1">
-                    <img src="img/barbecue.jpg" >
-                    <h4>Barbecue pizza</h4>
-                </div>
-                <div class="menu1">
-                    <img src="img/pizza2.jpg" >
-                    <h4>pizza</h4>
-                </div>
-                <div class="menu1">
-                    <img src="img/pizza1.jpg" >
-                    <h4>Vegetable pizza</h4>
-                </div>
-                <div class="menu1">
-                    <img src="img/salami pizza.jpg" >
-                    <h4>salami pizza</h4>
-                </div>
-                <div class="menu1">
-                    <img src="img/mushroom pizza.jpg" >
-                    <h4>Mushroom pizza</h4>
-                </div>
-            </section>
+        <div class="content">
+          <h1><b>Welcome To Italian Pizza</b></h1>
+          <div>
+              <button type="button" class="btn btn-warning rounded-pill main-btn">Order Now</button>
+          </div>
+          <img src="img/pizza3.png" class="photo slider-image">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
 
-            <section id="contact" class="contact">
-            </div>
-            <div class="contact-text">
-                <h2>Available 24 hours</h2>
-					<strong>Contact Info</strong>
-					<p>274-5819<br>0953497582</p>
-            </div>
-                
-            </section>
+<section id="menu" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <img src="img/Corn pizza.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text">Corn pizza</p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-4">
+        <div class="card mb-3">
+          <img src="img/barbecue1.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text">Barbecue pizza</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <img src="img/pizza2.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text">pizza</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <img src="img/pizza1.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text">Vegetable pizza</p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-4">
+        <div class="card mb-3">
+          <img src="img/salami pizza.jpg" class= "card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text">Salami pizza</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <img src="img/mushroom pizza.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text">Mushroom pizza</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            
+<footer id="contact" class="py-5 text-white text-center">
+  <div class="container">
+    <P class="lead">
+    <h2>Available 24 hours</h2>
+    <strong>Contact Info</strong>
+    <p>444-4444<br>0999444444</p>
+      Copyright &copy;
+    </P>
+  </div>
+</footer>
 
-    </body>
-
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
