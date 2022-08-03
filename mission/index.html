@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mission 5</title>
+    <title>Mission 6</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
   </head>
 
-  <body>  
+  <body>
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -21,6 +24,12 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link p-lg-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3" href="#service">Services</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle p-lg-3" href="#menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,118 +47,275 @@
               <li class="nav-item">
                 <a class="nav-link p-lg-3" href="#contact">Contact</a>
               </li>
+              <li class="nav-item">
+                <img src="img/moon.png" class="icon" id="icon">
+              </li>
           </div>
         </div>
     </nav>
+  
+    <div class="container-fluid">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div id="home" class="home">
+          <div class="carousel-item active">
+            <div class="content">
+              <h1><b>Welcome To Italian Pizza</b></h1>
+              <div>
+                  <button type="button" class=" btn btn-warning rounded-pill main-btn">Order Now</button>
+              </div>
+            <img src="img/pizza.png" class=" photo slider-image">
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content">
+              <h1><b>Welcome To Italian Pizza</b></h1>
+              <div>
+                  <button type="button" class="btn btn-warning rounded-pill main-btn">Order Now</button>
+              </div>
+              <img src="img/pizza3.png" class="photo slider-image">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div> 
 
-<div class="container text-dark">
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    </div>
-    <div id="home" class="carousel-inner home">
-      <div class="carousel-item active">
-        <div class="content">
-          <h1><b>Welcome To Italian Pizza</b></h1>
-          <div>
-              <button type="button" class="text-dark btn btn-warning rounded-pill main-btn">Order Now</button>
+    <section class="dark text-center py-5" id="about">
+      <h3 class="heading">About</h3>
+      <div class="heading-underline"></div>
+      <div class="text-start">
+        <div>
+          <div class="container">
+            <div class="d-sm-flex">
+              <div>
+                <h3 class="text-center text-warning display-5">Italian Pizza</h3>
+                <p class="py-2 lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Error sed provident quia dolores consequuntur numquam earum eius rem consequatur,
+                  commodi, hic ea in ad accusamus alias, accusantium minima fugit iusto!</p>
+                <div class="about">
+                  <h6><i class="fas fa-arrow-alt-circle-right"></i>Good Quality</h6>
+                  <h6><i class="fas fa-arrow-alt-circle-right"></i>Fresh Vagetables</h6>
+                  <h6><i class="fas fa-arrow-alt-circle-right"></i>Available 24X7</h6>
+                  <h6><i class="fas fa-arrow-alt-circle-right"></i>Best Price</h6>
+                  <h6><i class="fas fa-arrow-alt-circle-right"></i>Best Quality</h6>
+                </div>
+              </div>
+              <div class="img-fluid w-100">
+                <img src="img/about.png" alt="img">
+              </div>
+            </div>
           </div>
-        <img src="img/pizza.png" class="photo slider-image">
-       
+        </div>
       </div>
-      </div>
-      <div class="carousel-item">
+    </section>
 
-        <div class="content">
-          <h1><b>Welcome To Italian Pizza</b></h1>
-          <div>
-              <button type="button" class="btn btn-warning rounded-pill main-btn">Order Now</button>
+    <section class="text-center py-5" id="service">
+      <h3 class="heading">Services</h3>
+      <div class="heading-underline"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card service mb-3">
+                <img src="img/delivery.png" class="card-img-top">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Free Delivery</h4>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sint laborum a dolorum!</p>
+                    <a href="#" class="btn btn-warning">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card service mb-3">
+                <img src="img/payment.png" class="card-img-top">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Free Delivery</h4>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sint laborum a dolorum!</p>
+                    <a href="#" class="btn btn-warning">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card service mb-3">
+                <img src="img/fresh.png" class="card-img-top">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Free Delivery</h4>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sint laborum a dolorum!</p>
+                    <a href="#" class="btn btn-warning">Read More</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <img src="img/pizza3.png" class="photo slider-image">
+        </div>
+    </section>
+  
+    <section id="menu" class="text-center dark py-5">
+      <h3 class="heading">Menu</h3>
+      <div class="heading-underline"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="menu card mb-3">
+              <img src="img/Corn pizza.jpg" class="card-img-top">
+              <div class="card-body text-center">
+                <p class="card-text">Corn pizza</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-sm-4">
+            <div class="card menu mb-3">
+              <img src="img/barbecue.jpg" class="card-img-top">
+              <div class="card-body text-center">
+                <p class="card-text">Barbecue pizza</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card menu mb-3">
+              <img src="img/pizza2.jpg" class="card-img-top">
+              <div class="card-body text-center">
+                <p class="card-text">pizza</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card menu mb-3">
+              <img src="img/pizza1.jpg" class="card-img-top">
+              <div class="card-body text-center">
+                <p class="card-text">Vegetable pizza</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-sm-4">
+            <div class="card menu mb-3">
+              <img src="img/salami pizza.jpg" class= "card-img-top">
+              <div class="card-body text-center">
+                <p class="card-text">Salami pizza</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card menu mb-3">
+              <img src="img/mushroom pizza.jpg" class="card-img-top">
+              <div class="card-body text-center">
+                <p class="card-text">Mushroom pizza</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
+    </section>
 
-<section id="menu" class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card mb-3">
-          <img src="img/Corn pizza.jpg" class="card-img-top">
-          <div class="card-body text-center">
-            <p class="card-text">Corn pizza</p>
+    <section class="contact text-center py-5" id="contact">
+      <h3 class="heading">Contact Us <i class="fas fa-paper-plane"></i></h3>
+      <div class="heading-underline"></div>
+      <div class="text-start">
+        <div>
+          <div class="container">
+            <div class="d-sm-flex">
+              <div>
+                <p class="py-2 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi temporibus ab ut, eaque voluptate.
+                  </p>
+                  <p class="text-center lead">We Want To Hear From You, Write Us:</p>
+                  <form action="#" method="post">
+                    <div class="row mb-4">
+                      <div class="col-md-12">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" onchange="chkName()" onkeydown="colorName('#fdc38d')" onkeyup="colorName('white')" required>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-md-12">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" onchange="chkEmail()" onkeydown="colorEmail('#fdc38d')" onkeyup="colorEmail('white')" required>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-md-12">
+                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone 00963..." onchange=chkPhone() onkeydown="colorPhone('#fdc38d')" onkeyup="colorPhone('white')" required>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-md-12">
+                        <input type="text" name="opinion" class="form-control" placeholder="Give your opinion" onkeydown="colorOpinion('#fdc38d')" onkeyup="colorOpinion('white')" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="text-center col-md-12">
+                        <input type="submit" class="btn btn-warning rounded-pill main-btn" value="Send Message">
+                      </div>
+                    </div> 
+                  </form>
+              </div>
+              <div class="img-fluid w-50 px-lg-5">
+                <img src="img/contact.png">
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class=" col-sm-4">
-        <div class="card mb-3">
-          <img src="img/barbecue.jpg" class="card-img-top">
-          <div class="card-body text-center">
-            <p class="card-text">Barbecue pizza</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card mb-3">
-          <img src="img/pizza2.jpg" class="card-img-top">
-          <div class="card-body text-center">
-            <p class="card-text">pizza</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </div> 
+    </section>
 
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card mb-3">
-          <img src="img/pizza1.jpg" class="card-img-top">
-          <div class="card-body text-center">
-            <p class="card-text">Vegetable pizza</p>
+    <footer class="py-5 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h3>Food Taste</h3>
+            <span>Connect With Us</span>
+            <div>
+              <a href="#"><i class='bx bxl-facebook' ></i></a>
+              <a href="#"><i class='bx bxl-twitter' ></i></a>
+              <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div>
+              <h3>Menu Links</h3>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </div>
+          </div>
+          <div class="col-sm-3">
+            <div>
+              <h3>Quick Links</h3>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Privacy Policy">Privacy Policy</a></li>
+              <li><a href="#Disclaimer">Disclaimer</a></li>
+              <li><a href="#Terms Of Use">Terms Of Use</a></li>
+          </div>
+          </div>
+          <div class="col-sm-3">
+            <div>
+              <h3>Contact</h3>
+              <i class='bx bxs-map' ><span> Syria,Damascus,Maysat</span></i>
+              <i class='bx bxs-phone' ><span>+963 9994 44444</span></i>
+              <i class='bx bxs-envelope' ><span>Italianpizza@gmail.com</span></i>
+          </div>
           </div>
         </div>
-      </div>
-      <div class=" col-sm-4">
-        <div class="card mb-3">
-          <img src="img/salami pizza.jpg" class= "card-img-top">
-          <div class="card-body text-center">
-            <p class="card-text">Salami pizza</p>
-          </div>
+        <div class="copyright text-center">
+          <p>Italian Pizza &copy;</p>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card mb-3">
-          <img src="img/mushroom pizza.jpg" class="card-img-top">
-          <div class="card-body text-center">
-            <p class="card-text">Mushroom pizza</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer id="contact" class="py-5 text-white text-center">
-  <div class="container">
-    <P class="lead">
-    <h2>Available 24 hours</h2>
-    <strong>Contact Info</strong>
-    <p>444-4444<br>0999444444</p>
-      Copyright &copy;
-    </P>
-  </div>
-</footer>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
   </body>
 </html>

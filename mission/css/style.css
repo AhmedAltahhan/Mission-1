@@ -1,9 +1,12 @@
 :root{
     --orange-color:#a3550c;
+    --orange1-color: #dfa167;
+    --colora: #000;
+    --backgroundcolor2:  #ece1db;
+    --colortext:#000;
+    --buttoncolor: #dfa167;
 }
 body{
-    width: 100%;
-    height: 10000;
     background-color: #e9d6cd;
 }
 
@@ -12,10 +15,10 @@ body{
     height: 60px;
 }
 .navbar{
-    background-color: #dfa167;
+    background-color:var(--orange1-color);
 }
 .navbar .navbar-nav .nav-link{
-    color: white;
+    color: var(--colora);
 }
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:focus,
@@ -25,13 +28,14 @@ body{
 
 .home{
     width: 100%;
-    min-height: 90vh;
+    min-height: 80vh;
 }
+
 .photo{
     left: 120%;
     position: absolute;
     bottom: 0;
-    width: 150%;
+    width: 120%;
 }
 .content{
     width: 33%;
@@ -44,23 +48,109 @@ body{
     padding: 0.5rem 1.5rem;
 }
 
+h3.heading{
+    color: var(--colortext);
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.9rem;
+}
+.heading-underline{
+    width: 4rem;
+    height: .2rem;
+    background-color:var(--orange1-color);
+    margin: 0 auto 2rem;
+}
+
+
+.about h6 {
+    padding: 1rem 0;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.about h6:hover {
+    transition: 1s ease;
+    transform: translateX(2rem);
+}
+.about .fas {
+    color: var(--orange1-color);
+    padding-right: 1rem;
+}
+
+.card-body:hover{
+    background: var(--orange1-color);
+    transition: .5s ease all;
+
+}
+
+.service{
+    background: var(--orange1-color);
+
+}
+
+.dark{
+    background-color: var(--backgroundcolor2);
+}
+
 .card-img-top{
     padding: 10px 1px;
     width: 100%;
     height: 300px;
     transition: 0.2s;
 }
-.card-img-top:hover{
-    transform: scale(1.04);
-}
 
-.card{
-    background-color: #e9d6cd;
-}
-.card-body{
-    background-color: #e9d6cd;
+.menu{
+    background-color: var(--orange1-color);
 }
 
 footer{
-    background: #dfa167;
+    background:var(--orange1-color);
+}
+
+.icon{
+    padding-top: 15px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.darkmode{
+    background-color: #292929;
+    color: white;
+    --orange1-color: #050000;
+    --backgroundcolor:  #000000;
+    --colora:white;
+    --backgroundcolor2:  #363636;
+    --colortext:#a3550c;
+    --buttoncolor: rgb(56, 55, 55);
+}
+
+.form-check{
+    margin-left: 30px;
+}
+.navbar-toggler{
+    background-color: var(--buttoncolor);
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--colora);
+}
+
+footer li {
+    list-style: none;
+}
+footer i{
+    padding-left: 5px;
+}
+.copyright{
+    border-top: 1px solid;
+}
+footer a.active,
+footer a:hover{
+    color:var(--orange-color);
+}
+
+footer h3{
+    padding-top: 12px;
 }
